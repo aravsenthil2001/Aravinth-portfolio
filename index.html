@@ -1,31 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aravinth Senthilkumar – .NET Developer</title>
+
+  <meta name="description" content=".NET Developer with 3 years experience in .NET Core, SQL Server, Azure DevOps, SSIS, CI/CD">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --ink:#0e0e0f;--paper:#f4f1eb;--cream:#ede9df;
+      --accent:#c0392b;--muted:#7a7568;--border:#d4cfc5;
+    }
+    body{background:var(--paper);color:var(--ink);font-family:'DM Sans';line-height:1.7}
+    nav{
+      position:fixed;top:0;width:100%;display:flex;justify-content:space-between;
+      padding:1rem 3rem;background:rgba(244,241,235,0.9);
+      border-bottom:1px solid var(--border)
+    }
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--muted);font-size:.75rem}
+    .hero{display:grid;grid-template-columns:1fr 1fr;height:100vh;padding-top:70px}
+    .hero-left{padding:4rem}
+    h1{font-family:'Playfair Display';font-size:3.5rem}
+    h1 span{color:var(--accent)}
+    .hero-subtitle{margin-top:1rem;color:var(--muted)}
+    .btn{
+      padding:.7rem 1.5rem;border:1px solid var(--ink);
+      text-decoration:none;font-size:.75rem;margin-right:.5rem
+    }
+    .btn-primary{background:var(--ink);color:#fff}
+    section{padding:5rem 3rem}
+    h2{font-family:'Playfair Display';margin-bottom:2rem}
+    .skills span{
+      display:inline-block;padding:.3rem .6rem;border:1px solid var(--border);
+      margin:.3rem;font-size:.7rem
+    }
+    footer{text-align:center;padding:2rem;border-top:1px solid var(--border)}
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Here is some information about me.</p>
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <p>Details about my projects will go here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Information on how to contact me.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 My Portfolio</p>
-    </footer>
+
+<nav>
+  <div><b>Aravinth S.</b></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <p style="color:var(--accent);font-size:.8rem;">Open to .NET Developer Roles</p>
+
+    <h1>Aravinth<br><span>Senthilkumar</span></h1>
+
+    <p class="hero-subtitle">
+      .NET Developer with 3 years of experience building enterprise banking applications.
+    </p>
+
+    <ul style="margin-top:1rem;color:var(--muted);font-size:.9rem;">
+      <li>✔ .NET Core, SQL Server, SSIS</li>
+      <li>✔ Production Support & CI/CD</li>
+      <li>✔ Enterprise Banking Domain</li>
+    </ul>
+
+    <div style="margin-top:2rem;">
+      <a href="mailto:aravsenthil2001@gmail.com" class="btn btn-primary">Contact</a>
+      <a href="Aravinth_Resume.pdf" download class="btn">Download Resume</a>
+      <a href="https://www.linkedin.com/in/aravinth-senthil-1239441b6" target="_blank" class="btn">LinkedIn</a>
+    </div>
+  </div>
+
+  <div style="display:flex;align-items:center;justify-content:center;">
+    <h2>3+ Years<br>Experience</h2>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a .NET Developer with 3 years of experience working on enterprise applications 
+    at Mphasis for Wells Fargo project.
+  </p>
+  <p>
+    Skilled in C#, .NET Core, SQL Server, SSIS, CI/CD pipelines and production support.
+  </p>
+  <p>
+    📍 Chennai / Bengaluru (Open to Relocation)
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>C#</span><span>.NET Core</span><span>ASP.NET</span>
+    <span>SQL Server</span><span>SSIS</span>
+    <span>Azure DevOps</span><span>Jenkins</span>
+    <span>Autosys</span><span>ServiceNow</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <h3>Software Engineer – Mphasis</h3>
+  <p><i>Mar 2024 – Present</i></p>
+
+  <ul>
+    <li>Developed enterprise banking apps using .NET Core</li>
+    <li>Worked on SSIS batch processing and SQL validation</li>
+    <li>Handled Autosys job monitoring and failures</li>
+    <li>Supported CI/CD pipelines and deployments</li>
+  </ul>
+</section>
+
+<section style="text-align:center;">
+  <h2>Let's Work Together</h2>
+  <p style="color:var(--muted);">
+    I'm actively looking for .NET Developer opportunities.
+  </p>
+
+  <div style="margin-top:1.5rem;">
+    <a href="mailto:aravsenthil2001@gmail.com" class="btn btn-primary">
+      Contact Me
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>Aravinth Senthilkumar · .NET Developer · 2026</p>
+</footer>
+
 </body>
 </html>
